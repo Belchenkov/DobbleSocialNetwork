@@ -20,7 +20,61 @@ header .logo {
 
 .bubble {
 		position: relative;
-		width: 500px;
+		min-height: 65px;
+		padding: 15px;
+		background-color: #fff;
+		border-radius: 10px;
+		border: 1px solid #ccc;
+		overflow: hidden;
+}
+
+.bubble:after {
+		content: '';
+		position: absolute;
+		border-style: solid;
+		border-color: transparent #fff;
+		border-width: 15px 15px 15px 0;
+		display: block;
+		width: 0;
+		z-index: 1;
+		margin-top: -15px;
+		left: -15px;
+		top: 50%;
+}
+
+.bubble:before {
+		content: '';
+		position: absolute;
+		border-style: solid;
+		border-width: 15px 15px 15px 0;
+		border-color: transparent #ccc;
+		display: block;
+		width: 0;
+		z-index: 1;
+		margin-top: -15px;
+		left: -16px;
+		top: 50%;
+}
+
+.post-actions {
+		margin: 5px;
+}
+
+.comment-form .form-group {
+		width: 90%;
+}
+
+.comment-form input[type='text'] {
+		width: 100%;
+}
+
+.comment {
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		padding: 3px;
+		margin: 5px 0;
+		overflow: hidden;
+		width: 100%;
 }
 
 a.comment-avatar img {
@@ -30,11 +84,35 @@ a.comment-avatar img {
 
 .friends li {
 		list-style-type: none;
-		padding: 5px;
+		padding: 0 5px;
 		display: inline;
 		float: left;
 }
 
 .friends img {
 		width: 55px;
+}
+
+.groups img {
+		width: 80px;
+		float: left;
+		margin-right: 15px;
+}
+
+.group-item {
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #ccc;
+		overflow: hidden;
+}
+
+footer {
+		background-color: #f4f4f4;
+		height: 90px;
+		color: #04519b;
+		font-weight: bold;
+		text-align: center;
+		padding-top: 40px;
+		margin-top: 30px;
+		border-top: 7px solid #04519b;
 }
