@@ -106,6 +106,17 @@ a.comment-avatar img {
 		overflow: hidden;
 }
 
+.members img {
+		width: 100%;
+		margin-bottom: 5px;
+}
+
+.members .member-row {
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+}
+
 footer {
 		background-color: #f4f4f4;
 		height: 90px;
@@ -116,3 +127,10 @@ footer {
 		margin-top: 30px;
 		border-top: 7px solid #04519b;
 }
+
+@media (min-width: 991px) {
+		.members p {
+				padding-top: 40px;
+		}
+}
+
